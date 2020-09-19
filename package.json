@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "release": "standard-version",
-    "postinstall": "npm run build && cp -r dist/** .",
+    "postinstall": "npm run build && rm src test -rf && cp -r dist/** .",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
