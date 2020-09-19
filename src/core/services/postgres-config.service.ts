@@ -9,9 +9,6 @@ export class PostgresConfigService implements TypeOrmOptionsFactory {
     constructor(private readonly config: ConfigService) { }
 
     createTypeOrmOptions(): TypeOrmModuleOptions {
-        const paths = __dirname.split('/');
-        const lastPortionOfPath = paths[paths.length - 1];
-        console.log(lastPortionOfPath)
         const env = this.config.get('postgres') as PostgresEnvironment;
         return {
             type: 'postgres',
@@ -20,7 +17,7 @@ export class PostgresConfigService implements TypeOrmOptionsFactory {
             username: env.user,
             password: env.pass,
             database: env.db,
-            entities: [join(process.cwd(), lastPortionOfPath, '**/*.entity{.ts,.js}')]
+            entities: [join(process.cwd(), '**/*.entity.js')]
         }
     }
 }
