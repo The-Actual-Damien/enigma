@@ -1,6 +1,11 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { EnvironmentService, PostgresConfigService, SwaggerConfigService } from './core';
+
+import {
+  EnvironmentService,
+  PostgresConfigService,
+  SwaggerConfigService
+} from './core';
 
 @Module({
   imports: [

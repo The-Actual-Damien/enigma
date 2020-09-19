@@ -1,4 +1,3 @@
-export * from './enigma.module';
 export * from './interfaces/environment';
 export * from './interfaces/postgres-environment';
 export * from './interfaces/swagger-config';
