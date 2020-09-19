@@ -11,7 +11,7 @@ export class PostgresConfigService implements TypeOrmOptionsFactory {
     createTypeOrmOptions(): TypeOrmModuleOptions {
         const paths = __dirname.split('/');
         const lastPortionOfPath = paths[paths.length - 1];
-
+        console.log(lastPortionOfPath)
         const env = this.config.get('postgres') as PostgresEnvironment;
         return {
             type: 'postgres',
