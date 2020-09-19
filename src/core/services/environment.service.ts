@@ -6,7 +6,7 @@ export class EnvironmentService {
     constructor() { }
 
     init(): Environment {
-        const envs = {
+        return {
             env: process.env.NODE_ENV || 'development',
             port: parseInt(process.env.PORT, 10) || 3000,
             token: process.env.TOKEN,
@@ -18,9 +18,6 @@ export class EnvironmentService {
                 db: process.env.PG_DB
             }
         }
-
-        console.log('processes', envs);
-        return envs;
     }
 }
 

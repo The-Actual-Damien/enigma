@@ -17,7 +17,7 @@ export class PostgresConfigService implements TypeOrmOptionsFactory {
             username: env.user,
             password: env.pass,
             database: env.db,
-            entities: [join(__dirname, '../', '/**/*.entity{.ts,.js}')]
+            entities: [join(process.cwd(), '**/*.entity{.ts,.js}')]
         }
     }
 }
