@@ -1,6 +1,6 @@
 {
   "name": "@yggni/enigma",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "author": "",
   "license": "UNLICENSED",
@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "release": "standard-version",
+    "prepublish": "npm run build && cp ./package.json dist",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
