@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/yggni/enigma/compare/v0.0.9...v0.0.10) (2020-09-20)
+
+
+### Bug Fixes
+
+* packaging release ([ddc4252](https://github.com/yggni/enigma/commit/ddc4252b4e75fa5ee81143c9881c9e0029cae978))
+
 ### [0.0.9](https://github.com/yggni/enigma/compare/v0.0.8...v0.0.9) (2020-09-20)
 
 
