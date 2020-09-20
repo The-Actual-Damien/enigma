@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/yggni/enigma/compare/v0.0.1...v0.0.3) (2020-09-20)
+
+
+### Bug Fixes
+
+* rollback-version ([ac14cc1](https://github.com/yggni/enigma/commit/ac14cc11b586c8653eee3e35c3d3ac5e24da03ff))
+
 ### [0.0.2](https://github.com/yggni/enigma/compare/v0.0.1...v0.0.2) (2020-09-20)
 
 
