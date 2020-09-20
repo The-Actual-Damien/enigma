@@ -3,11 +3,12 @@ import { Environment } from '..'
 
 @Injectable()
 export class EnvironmentService {
-    constructor(private protectedEnvironments: Array<String> = ['staging', 'production']) { }
+    constructor() { }
 
     init(): Environment {
         const currentEnvironment = process.env.NODE_ENV || 'development';
-        const synchronizeDb = !this.protectedEnvironments.includes(currentEnvironment) && process.env.DB_SYNC === 'true';
+        const protectedEnvironments = process.env.PROTECTED_ENVIRONMENTS.split(/(,|;|:)/g);
+        const synchronizeDb = process.env.DB_SYNC === 'true' && (protectedEnvironments && !protectedEnvironments.includes(currentEnvironment));
         return {
             env: currentEnvironment,
             port: parseInt(process.env.PORT, 10) || 3000,
