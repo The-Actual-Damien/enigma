@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/yggni/enigma/compare/v0.0.12...v0.0.13) (2020-09-20)
+
+
+### Bug Fixes
+
+* environment loading ([6310849](https://github.com/yggni/enigma/commit/6310849a32fb0893c2e116fe4f3005b1cd7beae1))
+
 ### [0.0.12](https://github.com/yggni/enigma/compare/v0.0.11...v0.0.12) (2020-09-20)
 
 
