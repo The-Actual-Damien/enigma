@@ -11,6 +11,9 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "release": "standard-version",
     "prebuild": "rimraf dist",
