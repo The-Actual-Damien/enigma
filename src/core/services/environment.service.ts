@@ -7,8 +7,8 @@ export class EnvironmentService {
 
     init(): Environment {
         const currentEnvironment = process.env.NODE_ENV || 'development';
-        const protectedEnvironments = process.env.PROTECTED_ENVIRONMENTS.split(/(,|;|:)/g);
-        const synchronizeDb = process.env.DB_SYNC === 'true' && (protectedEnvironments && !protectedEnvironments.includes(currentEnvironment));
+        const protectedEnvironments = process.env.PROTECTED_ENVIRONMENTS || 'production';
+        const synchronizeDb = process.env.DB_SYNC === 'true' && protectedEnvironments.indexOf(currentEnvironment) === -1;
         return {
             env: currentEnvironment,
             port: parseInt(process.env.PORT, 10) || 3000,

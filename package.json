@@ -17,6 +17,7 @@
     "build": "nest build",
     "build:release": "npm run build && cp package.json README.md dist",
     "publish:release": "npm run build:release && npm publish dist",
+    "publish:all": "npm run release && git push --follow-tags origin main && npm run publish:release",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
