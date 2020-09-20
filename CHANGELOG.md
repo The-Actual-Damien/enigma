@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/yggni/enigma/compare/v0.0.11...v0.0.12) (2020-09-20)
+
+
+### Features
+
+* allow protected envs to be inputed ([d855238](https://github.com/yggni/enigma/commit/d85523823ab01f8f431e529dd43de923e5e8b632))
+
 ### [0.0.11](https://github.com/yggni/enigma/compare/v0.0.10...v0.0.11) (2020-09-20)
 
 
