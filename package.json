@@ -1,6 +1,6 @@
 {
   "name": "@yggni/enigma",
-  "version": "0.0.7",
+  "version": "0.0.6",
   "description": "",
   "author": "",
   "license": "UNLICENSED",
@@ -11,14 +11,11 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "files": [
-    "dist/**/*"
-  ],
   "scripts": {
     "release": "standard-version",
     "prebuild": "rimraf dist",
     "build": "nest build && cp package.json README.md dist",
-    "publish:dist": "cd dist && npm publish",
+    "prepare": "cp package.json README.md dist",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
