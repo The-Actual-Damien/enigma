@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/yggni/enigma/compare/v0.0.3...v0.0.4) (2020-09-20)
+
+
+### Bug Fixes
+
+* adding files to package.json ([48ba24a](https://github.com/yggni/enigma/commit/48ba24a631c62d653e384f35b885dc4232ae8e6e))
+
 ### [0.0.3](https://github.com/yggni/enigma/compare/v0.0.1...v0.0.3) (2020-09-20)
 
 
