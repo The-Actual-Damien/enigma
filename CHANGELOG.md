@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/yggni/enigma/compare/v0.0.6...v0.0.7) (2020-09-20)
+
+
+### Bug Fixes
+
+* add prepare script for publishing ([0a9927d](https://github.com/yggni/enigma/commit/0a9927dcda729197481eff3c14b30c1f30e2db54))
+* attempt to pack as root ([e0699b8](https://github.com/yggni/enigma/commit/e0699b8faa9a1622108071a6066b7e864c1f08c5))
+
 ### [0.0.6](https://github.com/yggni/enigma/compare/v0.0.5...v0.0.6) (2020-09-20)
 
 ### [0.0.5](https://github.com/yggni/enigma/compare/v0.0.4...v0.0.5) (2020-09-20)
