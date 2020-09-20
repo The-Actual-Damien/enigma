@@ -17,8 +17,8 @@
   "scripts": {
     "release": "standard-version",
     "prebuild": "rimraf dist",
-    "build": "nest build",
-    "prepare": "cp package.json README.md dist",
+    "build": "nest build && cp package.json README.md dist",
+    "publish:dist": "cd dist && npm publish",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
