@@ -3,5 +3,6 @@ export interface PostgresEnvironment {
     port: number,
     user: string,
     pass: string,
-    db: string
+    db: string,
+    synchronize: boolean
 }

@@ -9,14 +9,15 @@ export class PostgresConfigService implements TypeOrmOptionsFactory {
     constructor(private readonly config: ConfigService) { }
 
     createTypeOrmOptions(): TypeOrmModuleOptions {
-        const env = this.config.get('postgres') as PostgresEnvironment;
+        const pgEnv = this.config.get('postgres') as PostgresEnvironment;
         return {
             type: 'postgres',
-            host: env.host,
-            port: env.port,
-            username: env.user,
-            password: env.pass,
-            database: env.db,
+            host: pgEnv.host,
+            port: pgEnv.port,
+            username: pgEnv.user,
+            password: pgEnv.pass,
+            database: pgEnv.db,
+            synchronize: pgEnv.synchronize,
             entities: [join(process.cwd(), '**/*.entity.js')]
         }
     }
