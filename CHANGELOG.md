@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/yggni/enigma/compare/v0.0.10...v0.0.11) (2020-09-20)
+
+
+### Features
+
+* add synchronize db to dev env ([a9af82e](https://github.com/yggni/enigma/commit/a9af82ecfc4f5e069e53ba8d70c5328a8dd78ad8))
+
 ### [0.0.10](https://github.com/yggni/enigma/compare/v0.0.9...v0.0.10) (2020-09-20)
 
 
